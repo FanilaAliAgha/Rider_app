@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".recmoney">
+
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center|bottom"
+            android:text="Recieve Cash"
+            android:textColor="@color/orangecolor"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="bottom"
+            android:textSize="18sp"
+            android:text="Account Number:"
+            android:textColor="@color/orangecolor" />
+
+
+        <EditText
+            android:id="@+id/accountno"
+            android:layout_width="385dp"
+            android:layout_height="60dp"
+            android:background="@drawable/boders"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:layout_below="@+id/account"
+            android:hint="98-2088-6548-9363"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:layout_below="@+id/accountno"
+            android:gravity="bottom"
+            android:textSize="18sp"
+            android:text="Name:"
+            android:textColor="@color/orangecolor" />
+
+
+        <EditText
+            android:id="@+id/fullname"
+            android:layout_width="385dp"
+            android:layout_height="60dp"
+            android:background="@drawable/boders"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:layout_below="@+id/name"
+            android:text="Azfar Rehman"
+            android:textColor="@color/black"
+            android:textColorHint="@color/orangecolor" />
+        <TextView
+            android:id="@+id/mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:layout_below="@+id/fullname"
+            android:gravity="bottom"
+            android:textSize="18sp"
+            android:text="Mobile Number"
+            android:textColor="@color/orangecolor" />
+        <EditText
+            android:id="@+id/recfullname"
+            android:layout_width="385dp"
+            android:layout_height="60dp"
+            android:background="@drawable/boders"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:layout_below="@+id/mobile"
+            android:hint="02222323233"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:layout_below="@+id/recfullname"
+            android:gravity="bottom"
+            android:textSize="18sp"
+            android:text="Total Amount"
+            android:textColor="@color/orangecolor" />
+        <EditText
+            android:id="@+id/fillamount"
+            android:layout_width="385dp"
+            android:layout_height="60dp"
+            android:background="@drawable/boders"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:layout_below="@+id/total"
+            android:hint="1,000,000"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/amonunt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:layout_below="@+id/fillamount"
+            android:gravity="bottom"
+            android:textSize="18sp"
+            android:text="Amount You want to withdraw:"
+            android:textColor="@color/orangecolor" />
+        <EditText
+            android:id="@+id/amountinrs"
+            android:layout_width="385dp"
+            android:layout_height="60dp"
+            android:background="@drawable/boders"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:layout_below="@+id/amonunt"
+            android:hint="40,000"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:text="done"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

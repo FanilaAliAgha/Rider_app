@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rider">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_baseline_directions_bike_24"
+        android:label="Rider"
+        android:roundIcon="@drawable/ic_baseline_directions_bike_24"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Rider">
+        <activity android:name=".delivery2" />
+        <activity android:name=".delivery1" />
+        <activity android:name=".rider4" />
+        <activity android:name=".ride3" />
+        <activity android:name=".ride2" />
+        <activity android:name=".rideopt" />
+        <activity android:name=".recmoney" />
+        <activity android:name=".sendmoney" />
+        <activity android:name=".cash" />
+        <activity android:name=".setting" />
+        <activity android:name=".inbox" />
+        <activity android:name=".complaint" />
+        <activity android:name=".wallet" />
+        <activity android:name=".otppage" />
+        <activity android:name=".dashboard" />
+        <activity android:name=".signup" />
+        <activity android:name=".login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
